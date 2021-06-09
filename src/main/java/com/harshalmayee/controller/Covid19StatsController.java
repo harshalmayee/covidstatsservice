@@ -5,6 +5,7 @@ import com.harshalmayee.dto.StateData;
 import com.harshalmayee.dto.SummaryData;
 import com.harshalmayee.exception.ResourceNotFoundException;
 import com.harshalmayee.service.Covid19DataProvider;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -16,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/api/v1")
+@ApiOperation(value = "/api/v1",tags = "Covid19 Status API")
 public class Covid19StatsController {
 
     @Autowired
